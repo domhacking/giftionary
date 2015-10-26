@@ -1,0 +1,38 @@
+.main{
+    height: 100%;
+    width: 100%;
+    // display: table;
+
+    .slideshow{
+        width: auto;
+        height: 50%;
+        position: relative;
+        // display: table-cell;
+        // vertical-align: middle;
+
+        .main-image{
+            background-repeat: no-repeat;
+            background-size: auto 100%;
+            background-position: center;
+            height: 100%;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .navigator{
+            font-size: 80px;
+            position: absolute;
+            top: 50%;
+            margin-top: -70px;
+            color: #ffffff;
+
+            &__next{
+                right: 30px;
+            }
+
+            &__prev{
+                left: 30px;
+            }
+        }
+    }
+}
