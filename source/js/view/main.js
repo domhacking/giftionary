@@ -108,19 +108,20 @@ module.exports = function() {
     template: require('./main.html'),
 
     goto: function( imageNum ){
+
         var images = this.get('images');
 
-        while (imageNum < 0 ) {
-            imageNum += images.length;
+        var random = imageNum || Math.floor((Math.random() * 90) + 1);
+
+        while (random < 0 ) {
+            random += images.length;
         }
 
-        console.log(imageNum)
-
-        imageNum %= images.length;
+        random %= images.length;
 
         this.set({
-            image: images[imageNum],
-            current: imageNum
+            image: images[random],
+            current: random,
         });
     },
 
@@ -139,7 +140,8 @@ module.exports = function() {
             this.goto(index);
         });
 
-        this.goto( 0 );
+
+        this.goto(0);
     },
 
     onrender: function() {
