@@ -1,23 +1,18 @@
 <div class="thickLine">
+
+    <h1><img src="../img/header.png" alt="The Giftionary"/></h1>
+
     <div class="middleLine">
         <div class="bottomLine">
 
-            <h1><img src="../img/header.png" alt="The Giftionary"/></h1>
-
             <div class="slideshow">
-                <div class='main-image' style='background-image: url({{image.name}});'></div>
-            </div>
-
-
-
-            <div class="dip">
-                <img src="../img/dip.png" alt="">
+                <div class='main-image'><img src="{{image.name}}" alt=""/></div>
             </div>
 
             <div class="social">
-                <a href="http://www.facebook.com" target="_blank"><img src="../img/facebook.png" alt=""></a>
-                <a href="http://www.twitter.com" target="_blank"><img src="../img/twitter.png" alt=""></a>
-                <a href="http://www.tumblr.com" target="_blank"><img src="../img/tumblr.png" alt=""></a>
+                <a onclick="window.open('https://www.facebook.com/sharer.php?u=http%3a%2f%2fgiftionary.co.uk%2f', 'newwindow', 'width=600, height=500'); return false;" target="_blank"><img src="../img/facebook.png" alt=""></a>
+                <a onclick="window.open('http://twitter.com/share?url=http%3a%2f%2fgiftionary.co.uk%2f&hashtags=#giftionary', 'newwindow', 'width=600, height=500'); return false;" target="_blank"><img src="../img/twitter.png" alt=""></a>
+                <a onclick="window.open('https://www.tumblr.com/widgets/share/tool?canonicalUrl=http%3a%2f%2fgiftionary.co.uk%2f', 'newwindow', 'width=600, height=500'); return false;" target="_blank"><img src="../img/tumblr.png" alt=""></a>
             </div>
 
         </div>
@@ -26,4 +21,10 @@
     <a class='navigator navigator__prev' on-click='goto:{{current - 1}}'><img src="../img/navigator--left2.png" alt="" /></a>
     <a class='navigator navigator__next' on-click='goto:{{current + 1}}'><img src="../img/navigator--right2.png" alt="" /></a>
     <a class='shuffle' on-click="goto{{}}"><img src="../img/shuffle.png" alt=""></a>
+
+    <div class="dip">
+        <img src="../img/dip.png" alt="">
+    </div>
+
+
 </div>

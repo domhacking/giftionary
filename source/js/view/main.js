@@ -37,7 +37,6 @@ module.exports = function() {
         {name:'../gif/flabbergast.gif'},
         {name:'../gif/Fugacious.gif'},
         {name:'../gif/gasconade.gif'},
-        {name:'../gif/giftionary identity.psd'},
         {name:'../gif/habile.gif'},
         {name:'../gif/heavy-headed.gif'},
         {name:'../gif/idle.gif'},
@@ -111,7 +110,7 @@ module.exports = function() {
 
         var images = this.get('images');
 
-        var random = imageNum || Math.floor((Math.random() * 90) + 1);
+        var random = imageNum || Math.floor((Math.random() * 95) + 1);
 
         while (random < 0 ) {
             random += images.length;
@@ -145,6 +144,7 @@ module.exports = function() {
     },
 
     onrender: function() {
+
     }
 
   });
